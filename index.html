@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор отработанных часов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор отработанных часов</h1>
+        <div class="form">
+            <label for="days">Количество дней:</label>
+            <input type="number" id="days" min="1" max="31" value="1">
+            
+            <div id="time-inputs">
+                <!-- Поля ввода времени будут созданы динамически -->
+            </div>
+            
+            <button onclick="addTimeInput()">Добавить день</button>
+            <button onclick="calculateHours()">Рассчитать</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
